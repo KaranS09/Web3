@@ -9,7 +9,7 @@ import facebook from "../../images/facebook.png";
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-      <div className="flex flex-[0.5] justify-center items-center">
+      <div className="flex flex-[0.2] justify-center items-center">
         <span className="text-white flex flex-row  justify-center items-center p-2">
           <img
             src={logo}
@@ -19,27 +19,38 @@ const Footer = () => (
           Transact
         </span>
       </div>
-      <div className="flex flex-row">
-        <img
-          className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
-          src={insta}
-          alt=""
-        />
-        <img
-          className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
-          src={linkedin}
-          alt=""
-        />
-        <img
-          className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
-          src={twitter}
-          alt=""
-        />
-        <img
-          className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
-          src={facebook}
-          alt=""
-        />
+      <div className="flex flex-[0.25] flex-row">
+        <a href="https://www.instagram.com/">
+          <img
+            className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
+            src={insta}
+            alt=""
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/karan-sathish-44ba30221/">
+          <img
+            className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
+            src={linkedin}
+            alt=""
+          />
+        </a>
+        <a href="https://twitter.com/InterloperK">
+          <img
+            className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
+            src={twitter}
+            alt=""
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/
+        "
+        >
+          <img
+            className="h-[50px] p-[5px] m-[15px] rounded-full mt-0"
+            src={facebook}
+            alt=""
+          />
+        </a>
       </div>
     </div>
 

@@ -78,11 +78,11 @@ const Transactions = () => {
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
-            Connect yoir account to see the latest transactions
+            Connect your account to see the latest transactions
           </h3>
         )}
         {/* Latest Transactions */}
-        {/* Connect yoir account to see the latest transactions */}
+        {/* Connect your account to see the latest transactions */}
         <div className="flex flex-wrap justify-center items-center mt-10">
           {transaction.reverse().map((transaction, i) => (
             <TransactionCard key={i} {...transaction} />
