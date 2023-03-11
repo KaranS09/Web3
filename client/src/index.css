@@ -14,55 +14,47 @@ body {
 }
 
 .gradient-bg-welcome {
-  background-color: #0f0e13;
-  background-image: radial-gradient(
-      at 0% 0%,
-      rgb(11, 23, 35) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 50% 0%, rgb(45, 47, 47) 0, transparent 50%),
-    radial-gradient(at 100% 0%, rgb(72, 36, 36) 0, transparent 50%);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    65deg,
+    #4158d0 0%,
+    #c850c0 70%,
+    #ffcc70 100%
+  );
 }
 
 .gradient-bg-services {
-  background-color: #0f0e13;
-  background-image: radial-gradient(
-      at 0% 0%,
-      hsla(253, 16%, 7%, 1) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+  background-color: #4158d0;
+  background-image: linear-gradient(65deg, #4158d0 50%, #c850c0 100%);
 }
 
 .gradient-bg-servicesbt {
-  background-color: #0f0e13;
-  background-image: radial-gradient(
-      at 0% 0%,
-      hsla(253, 16%, 7%, 1) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 50% 50%, hsla(225, 39%, 25%, 1) 0, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+  background-color: #4158d0;
+  background-image: linear-gradient(50deg, #4158d0 60%, #c850c0 90%);
 }
 
 .gradient-bg-transactions {
-  background-color: #0f0e13;
-  background-image: radial-gradient(
-      at 0% 100%,
-      hsla(253, 16%, 7%, 1) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 50% 0%, rgb(43, 52, 83) 0, transparent 50%);
+  background-color: #ffcc70;
+  background-image: linear-gradient(61deg, #4158d0 30%, #4158d0 65%);
 }
 
 .gradient-bg-footer {
-  background-color: #0f0e13;
+  /* background-color: #0f0e13;
   background-image: radial-gradient(
       at 0% 100%,
       rgb(70, 55, 136) 0,
       transparent 53%
     ),
-    radial-gradient(at 50% 150%, rgb(87, 32, 51) 0, transparent 50%);
+    radial-gradient(at 50% 150%, rgb(87, 32, 51) 0, transparent 50%); */
+  background-color: #ffcc70;
+  background-image: linear-gradient(
+    225deg,
+    #4158d0 23%,
+    #4158d0 85%,
+    #4158d0 46%,
+    #c850c0 95%,
+    #ffcc70 100%
+  );
 }
 
 .blue-glassmorphism {
@@ -109,6 +101,36 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.blank {
+  display: none;
+}
+
+.background-grdnt {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    65deg,
+    #4158d0 35%,
+    #c850c0 80%,
+    #c850c0 80%,
+    #ffcc70 100%
+  );
+}
+
+.shm-img {
+  width: 384px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.welbackground {
+  background-image: url("../images/");
+}
+
+/* .border-div {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+} */
 
 @tailwind base;
 @tailwind components;

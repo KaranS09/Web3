@@ -4,18 +4,20 @@ import { HiMenu, HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { shortenAddress } from "../utils/shortenAddress";
 import { TransactionContext } from "../context/TransactionContext";
-import logo from "../../images/logo1.jpeg";
+import logo from "../../images/shmicon.png";
 
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>;
 };
 
 const Navbar = () => {
-  const { currentAccount, formData } = useContext(TransactionContext);
+  const { currentAccount, formData, connectWallet } =
+    useContext(TransactionContext);
+
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
     <div>
-      <div className="h-[2px] w-full bg-gray-500 my-0" />
+      {/* <div className="h-[2px] w-full bg-gray-500 my-0" /> */}
       <nav className="w-full flex flex-[0.2] justify-between flow-root items-center mt-0 pt-0">
         {/* <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
@@ -27,13 +29,25 @@ const Navbar = () => {
               alt="logo"
               className="w-16 mx-0 rounded-full p-2  my-0 cursor-pointer"
             />
-            Transact
+            Shardpay
           </span>
         </div>
         <div className="md:flex flex-initial flex-row justify- float-right items-center mt-7 px-5">
-          <p className=" text-white bg-gradient-to-r from-violet-600 via-red-500 to-green-400 inline-block text-transparent bg-clip-text py-1 mb-4">
+          <p className=" text-white  inline-block bg-clip-text py-1 mb-4">
             Connected account: {currentAccount}
+            {/* //bg-gradient-to-r from-violet-600 via-red-500 to-green-400  text-transparent */}
           </p>
+          {!currentAccount && (
+            <button
+              type="button"
+              onClick={connectWallet}
+              className="flex flex-row justify-center items-center mx-2 mb-5 bg-[#2952e3] py-1 px-2 rounded-full cursor-pointer hover:bg-[#2546bd] blue-glassmorphism"
+            >
+              <p className="text-white text-base font-semibold">
+                Connect Wallet
+              </p>
+            </button>
+          )}
         </div>
 
         {/* <ul className="text-white md:flex hidden list-none flex-row justify-end pt-7 items-center  mr-0">
@@ -74,7 +88,7 @@ const Navbar = () => {
           )}
         </div> */}
       </nav>
-      <div className="h-[1px] w-full bg-gray-500 my-0" />
+      <div className="h-[1px] w-full bg-gray-300 my-0" />
     </div>
   );
 };

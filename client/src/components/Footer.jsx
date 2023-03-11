@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../images/logo1.jpeg";
+import logo from "../../images/shmicon.png";
 import insta from "../../images/insta.jfif.jpg";
 import linkedin from "../../images/linkedin.png";
 import twitter from "../../images/twitter.png";
@@ -16,7 +16,7 @@ const Footer = () => (
             alt="logo"
             className="w-16 rounded-full p-2 cursor-pointer"
           />
-          Transact
+          Shardpay
         </span>
       </div>
       <div className="flex flex-[0.25] flex-row">

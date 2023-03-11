@@ -23,7 +23,7 @@ const Services = () => (
     <div className="flex w-full justify-center items-center gradient-bg-services">
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
         <div className="flex-1 flex flex-col justify-start items-start">
-          <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
+          <h1 className="text-white text-3xl sm:text-5xl py-2">
             Services that we
             <br />
             continue to improve
@@ -37,7 +37,7 @@ const Services = () => (
         <div className="flex-1 flex flex-col justify-start items-center">
           <ServiceCard
             color="bg-[#2952E3]"
-            title="Security gurantee"
+            title="Security guranteed"
             icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
             subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
           />
@@ -45,22 +45,22 @@ const Services = () => (
             color="bg-[#8945F8]"
             title="Best exchange rates"
             icon={<BiSearchAlt fontSize={21} className="text-white" />}
-            subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+            subtitle="We collect a minimal exchange rate for transactions performed on our platform while prioritizing user experience"
           />
           <ServiceCard
             color="bg-[#F84550]"
-            title="Fastest transactions"
+            title="A twist to traditional transactions"
             icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-            subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+            subtitle="Our image(Gif) based categorization of transactions provides a unique way of maintaining a record of transactions"
           />
         </div>
       </div>
     </div>
-    <div className="h-[1px] w-full bg-gray-500 my-0" />
+    {/* <div className="h-[1px] w-full bg-gray-500 my-0" /> */}
     <div className="flex justify-center">
       <img className="py-20" src={img} alt="img" />
     </div>
-    <div className="h-[1px] w-full bg-gray-500 my-0" />
+    {/* <div className="h-[1px] w-full bg-gray-500 my-0" /> */}
   </div>
 );
 

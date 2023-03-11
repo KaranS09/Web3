@@ -162,6 +162,7 @@ export const TransactionProvider = ({ children }) => {
     }
   };
 
+  console.log(formData);
   useEffect(() => {
     checkIfWalletsConnected();
     checkIfTransactionsExists();
